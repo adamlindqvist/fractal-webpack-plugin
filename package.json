@@ -1,0 +1,29 @@
+{
+  "name": "fractal-webpack-plugin",
+  "version": "1.0.0",
+  "description": "Fractal webpack plugin",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlindqvist/fractal-webpack-plugin.git"
+  },
+  "keywords": [
+    "Webpack",
+    "Fractal",
+    "Styleguide",
+    "UI"
+  ],
+  "author": "Adam Lindqvist",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adamlindqvist/fractal-webpack-plugin/issues"
+  },
+  "homepage": "https://github.com/adamlindqvist/fractal-webpack-plugin#readme",
+  "dependencies": {
+    "@frctl/fractal": "^1.1.7",
+    "webpack": "^4.6.0"
+  }
+}
