@@ -19,12 +19,6 @@ module.exports = class FractalWebpackPlugin {
 
     /*
      * Start the Fractal server
-     *
-     * In this example we are passing the option 'sync: true' which means that it will
-     * use BrowserSync to watch for changes to the filesystem and refresh the browser automatically.
-     * Obviously this is completely optional!
-     *
-     * This will also log any errors to the console.
      */
     startServer() {
         const server = fractal.web.server({
@@ -57,7 +51,7 @@ module.exports = class FractalWebpackPlugin {
     /*
     * Run a static export of the project web UI.
     *
-    * This task will report on progress using the 'progress' event emitted by the
+    * This will report on progress using the 'progress' event emitted by the
     * builder instance, and log any errors to the terminal.
     *
     * The build destination will be the directory specified in the 'builder.dest'
