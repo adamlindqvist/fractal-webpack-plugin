@@ -25,7 +25,7 @@ module.exports = {
     },
     plugins: [
       new FractalWebpackPlugin({
-        mode: 'server',
+        mode: 'server', // mode: 'build'
         sync: true,
       })
     ]
