@@ -1,5 +1,8 @@
 # fractal-webpack-plugin
 Fractal Webpack Plugin.
+
+Requires a `fractal.js` file in the root of the project. See https://fractal.build/guide/project-settings
+
 ## Usage
 
 Example `webpack.config`
