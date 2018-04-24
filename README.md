@@ -1,7 +1,7 @@
 # fractal-webpack-plugin
 Fractal Webpack Plugin.
 
-Read a `fractal.js` file if placed in the root of the project. See https://fractal.build/guide/project-settings
+Reads a `fractal.js` file if placed in the root of the project. See https://fractal.build/guide/project-settings
 
 ## Installation
 
