@@ -14,6 +14,8 @@ Do your fractal specific configurations in a `fractal.js` file and place it in t
 
 See https://fractal.build/guide/project-settings for more information
 
+---
+
 Example `webpack.config`
 
 ```javascript
