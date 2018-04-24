@@ -1,5 +1,5 @@
 # fractal-webpack-plugin
-Fractal Webpack Plugin.
+Fractal webpack plugin. Requires webpack 4+.
 
 ## Installation
 
