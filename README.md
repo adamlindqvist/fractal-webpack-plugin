@@ -6,7 +6,7 @@ Read a `fractal.js` file if placed in the root of the project. See https://fract
 ## Installation
 
 ```
-npm install ...
+npm install fractal-webpack-plugin --save
 ```
 
 
