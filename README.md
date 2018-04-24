@@ -51,7 +51,9 @@ module.exports = {
 Type: `string` <br>
 Default: `server`
 
-Boot up a server or build a static page. Available modes: `server` and `build`
+Boot up a server or build a static page.
+
+Available modes: `server` and `build`
 
 #### sync
 
