@@ -1,4 +1,15 @@
-const fractal = require('@frctl/fractal').create();
+const bluebird = require('bluebird');
+
+// Turn off warnings
+bluebird.config({
+    warnings: false
+});
+
+try {
+    var fractal = require('./fractal.js');
+} catch (e) {
+    var fractal = require('@frctl/fractal').create();
+}
 
 const logger = fractal.cli.console;
 
@@ -8,13 +19,11 @@ module.exports = class FractalWebpackPlugin {
     }
 
     apply(compiler) {
-        compiler.hooks.afterCompile.tap('FractalWebpackPlugin', (compilation) => {
-            if (this.options.mode === 'server') {
-                this.startServer();
-            } else if (this.options.mode === 'build') {
-                this.build();
-            }
-        });
+        if (this.options.mode === 'server') {
+            this.startServer();
+        } else if (this.options.mode === 'build') {
+            this.build();
+        }
     }
 
     /*
@@ -44,7 +53,7 @@ module.exports = class FractalWebpackPlugin {
                 body += `\nBrowserSync UI: ${format(syncUrls.ui)}`;
             }
 
-            logger.box(header, body, footer).persist();
+            return logger.box(header, body, footer).persist();
         });
     }
 
