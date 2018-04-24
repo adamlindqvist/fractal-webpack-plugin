@@ -41,3 +41,20 @@ module.exports = {
     ]
 };
 ```
+
+## Options
+
+#### mode
+
+Type: `string` <br>
+Default: `'server'`
+
+Boot up a server or build a static page
+
+#### sync
+
+Type: `boolean` <br>
+Default: `true`
+
+To use browsersync or not
+
