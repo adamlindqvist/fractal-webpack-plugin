@@ -16,14 +16,18 @@ const logger = fractal.cli.console;
 module.exports = class FractalWebpackPlugin {
     constructor(options = { mode: 'server', sync: true }) {
         this.options = options;
+        this.serverStarted = false;
     }
 
     apply(compiler) {
-        if (this.options.mode === 'server') {
-            this.startServer();
-        } else if (this.options.mode === 'build') {
-            this.build();
-        }
+        compiler.hooks.done.tap('FractalWebpackPlugin', () => {
+            if (this.options.mode === 'server' && !this.serverStarted) {
+                this.startServer();
+                this.serverStarted = true;
+            } else if (this.options.mode === 'build') {
+                this.constructor.build();
+            }
+        });
     }
 
     /*
@@ -66,7 +70,7 @@ module.exports = class FractalWebpackPlugin {
     * The build destination will be the directory specified in the 'builder.dest'
     * configuration option set above.
     */
-    build() {
+    static build() {
         const builder = fractal.web.builder();
 
         builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
