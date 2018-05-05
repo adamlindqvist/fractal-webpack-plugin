@@ -1,3 +1,6 @@
+[![npm version](https://badge.fury.io/js/fractal-webpack-plugin.svg)](https://badge.fury.io/js/fractal-webpack-plugin)
+
+
 # fractal-webpack-plugin
 Fractal webpack plugin to easily integrate fractal into a webpack workflow. 
 
