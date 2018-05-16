@@ -1,6 +1,4 @@
-[![npm version](https://badge.fury.io/js/fractal-webpack-plugin.svg)](https://badge.fury.io/js/fractal-webpack-plugin)
-
-[![npm](https://img.shields.io/npm/dt/fractal-webpack-plugin.svg)](https://www.npmjs.com/package/fractal-webpack-plugin)
+[![npm version](https://badge.fury.io/js/fractal-webpack-plugin.svg)](https://badge.fury.io/js/fractal-webpack-plugin) [![npm](https://img.shields.io/npm/dt/fractal-webpack-plugin.svg)](https://www.npmjs.com/package/fractal-webpack-plugin)
 
 
 # fractal-webpack-plugin
