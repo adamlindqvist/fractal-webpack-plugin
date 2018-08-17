@@ -46,6 +46,7 @@ module.exports = {
       new FractalWebpackPlugin({
         mode: 'server', // mode: 'build'
         sync: true,
+        configPath: './folder/fractal.js' // defaults to 'fractal.js'
       })
     ]
 };
@@ -68,4 +69,11 @@ Type: `boolean` <br>
 Default: `true`
 
 To use browsersync or not
+
+#### configPath
+
+Type: `string` <br>
+Default: `fractal.js`
+
+Path to where the fractal.js file is located.
 
