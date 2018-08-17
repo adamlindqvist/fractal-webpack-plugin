@@ -14,10 +14,14 @@ try {
 
 const logger = fractal.cli.console;
 
-module.exports = class FractalWebpackPlugin {
-    constructor(options = { mode: 'server', sync: true }) {
+class FractalWebpackPlugin {
+    constructor(options = { mode: 'server', sync: true, configPath: null }) {
         this.options = options;
         this.serverStarted = false;
+
+        if (this.options.configPath) {
+            fractal = require(path.join(process.cwd(), this.options.configPath));
+        }
     }
 
     apply(compiler) {
@@ -82,3 +86,5 @@ module.exports = class FractalWebpackPlugin {
         });
     }
 };
+
+module.exports = FractalWebpackPlugin;
