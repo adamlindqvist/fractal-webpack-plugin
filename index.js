@@ -1,4 +1,5 @@
 const bluebird = require('bluebird');
+const path = require('path');
 
 // Turn off warnings
 bluebird.config({
@@ -6,7 +7,7 @@ bluebird.config({
 });
 
 try {
-    var fractal = require('./fractal.js');
+    var fractal = require(path.join(process.cwd(), 'fractal'));
 } catch (e) {
     var fractal = require('@frctl/fractal').create();
 }
