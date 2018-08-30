@@ -24,7 +24,7 @@ class FractalWebpackPlugin {
                 this.startServer();
                 this.serverStarted = true;
             } else if (this.options.mode === 'build') {
-                this.constructor.build();
+                this.build();
             }
         });
     }
@@ -69,7 +69,7 @@ class FractalWebpackPlugin {
     * The build destination will be the directory specified in the 'builder.dest'
     * configuration option set above.
     */
-    static build() {
+    build() {
         const builder = fractal.web.builder();
 
         builder.on('progress', (completed, total) => logger.update(`Exported ${completed} of ${total} items`, 'info'));
