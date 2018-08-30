@@ -25,8 +25,7 @@
   "homepage": "https://github.com/adamlindqvist/fractal-webpack-plugin#readme",
   "dependencies": {
     "@frctl/fractal": "^1.1.7",
-    "webpack": "^4.6.0",
-    "bluebird": "^3.4.1"
+    "webpack": "^4.0"
   },
   "devDependencies": {
     "webpack-cli": "^3.1.0"

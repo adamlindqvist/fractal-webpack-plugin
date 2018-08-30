@@ -1,10 +1,4 @@
-const bluebird = require('bluebird');
 const path = require('path');
-
-// Turn off warnings
-bluebird.config({
-    warnings: false
-});
 
 try {
     var fractal = require(path.join(process.cwd(), 'fractal'));
