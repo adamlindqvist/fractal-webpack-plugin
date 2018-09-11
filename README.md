@@ -15,7 +15,7 @@ npm install fractal-webpack-plugin --save
 
 ## Usage
 
-Do your fractal specific configurations in a `fractal.js` file and place it in the root of the project.
+Do your fractal specific configurations in a `fractal.js` file and place it in the root of the project (or pass in a path in the configPath option).
 
 See https://fractal.build/guide/project-settings for more information
 
