@@ -9,7 +9,7 @@ Requires webpack 4+.
 ## Installation
 
 ```
-npm install fractal-webpack-plugin --save
+npm install fractal-webpack-plugin --save-dev
 ```
 
 
