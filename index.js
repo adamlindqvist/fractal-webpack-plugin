@@ -9,7 +9,7 @@ try {
 const logger = fractal.cli.console;
 
 class FractalWebpackPlugin {
-    constructor(options = { mode: 'server', sync: true, configPath: null }) {
+    constructor(options = { mode: 'server', configPath: null }) {
         this.options = options;
         this.serverStarted = false;
 
@@ -33,9 +33,7 @@ class FractalWebpackPlugin {
      * Start the Fractal server
      */
     startServer() {
-        const server = fractal.web.server({
-            sync: this.options.sync,
-        });
+        const server = fractal.web.server();
 
         server.on('error', err => logger.error(err.message));
 

@@ -19,6 +19,8 @@ Do your fractal specific configurations in a `fractal.js` file and place it in t
 
 See https://fractal.build/guide/project-settings for more information
 
+*Note:*
+The browsersync options has been removed from this plugin. It is recomended to set this settings in the `fractal.js` file instead. See https://fractal.build/guide/web/development-server.html#browsersync-integration
 ---
 
 Example `webpack.config`
@@ -45,7 +47,6 @@ module.exports = {
     plugins: [
       new FractalWebpackPlugin({
         mode: 'server', // mode: 'build'
-        sync: true,
         configPath: './folder/fractal.js' // defaults to 'fractal.js'
       })
     ]
@@ -62,13 +63,6 @@ Default: `server`
 Boot up a server or build a static page.
 
 Available modes: `server` and `build`
-
-#### sync
-
-Type: `boolean` <br>
-Default: `true`
-
-To use browsersync or not
 
 #### configPath
 

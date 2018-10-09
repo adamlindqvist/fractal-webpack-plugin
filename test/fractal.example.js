@@ -17,3 +17,10 @@ fractal.web.set('static.path', __dirname + '/public');
 
 /* Set the static HTML build destination */
 fractal.web.set('builder.dest', __dirname + '/build');
+
+fractal.web.set('server.sync', true);
+
+fractal.web.set('server.syncOptions', {
+    open: true,
+    notify: true
+});
