@@ -1,6 +1,6 @@
 {
   "name": "fractal-webpack-plugin",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Fractal webpack plugin",
   "main": "index.js",
   "scripts": {
