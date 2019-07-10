@@ -19,10 +19,6 @@ Do your fractal specific configurations in a `fractal.js` file and place it in t
 
 See https://fractal.build/guide/project-settings for more information
 
-*Note:*
-The browsersync options has been removed from this plugin in version 3.0.0. It is recommended to set this settings in the `fractal.js` file instead. See https://fractal.build/guide/web/development-server.html#browsersync-integration
----
-
 Example `webpack.config`
 
 ```javascript
