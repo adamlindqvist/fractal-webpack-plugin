@@ -19,7 +19,7 @@ class FractalWebpackPlugin {
         }
 
         this.hooks = {
-          shouldEmit: new AsyncSeriesHook(['compilation', 'callback'])
+          done: new AsyncSeriesHook(['compilation', 'callback'])
         }
     }
 
