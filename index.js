@@ -1,5 +1,4 @@
 const path = require('path');
-const { AsyncSeriesHook } = require('tapable');
 
 try {
     var fractal = require(path.join(process.cwd(), 'fractal'));
