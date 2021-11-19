@@ -1,4 +1,5 @@
 const path = require('path');
+const { AsyncSeriesHook } = require('tapable');
 
 try {
     var fractal = require(path.join(process.cwd(), 'fractal'));
@@ -16,15 +17,21 @@ class FractalWebpackPlugin {
         if (this.options.configPath) {
             fractal = require(path.join(process.cwd(), this.options.configPath));
         }
+
+        this.hooks = {
+          shouldEmit: new AsyncSeriesHook(['compilation', 'callback'])
+        }
     }
 
     apply(compiler) {
-        compiler.hooks.done.tap('FractalWebpackPlugin', () => {
+        compiler.hooks.done.tapAsync('FractalWebpackPlugin', (compilation, callback) => {
             if (this.options.mode === 'server' && !this.serverStarted) {
-                this.startServer();
-                this.serverStarted = true;
+                this.startServer().then(() => {
+                  this.serverStarted = true;
+                  callback();
+                });
             } else if (this.options.mode === 'build') {
-                this.build();
+                this.build().then(callback);
             }
         });
     }
