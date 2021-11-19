@@ -17,10 +17,6 @@ class FractalWebpackPlugin {
         if (this.options.configPath) {
             fractal = require(path.join(process.cwd(), this.options.configPath));
         }
-
-        this.hooks = {
-          done: new AsyncSeriesHook(['compilation', 'callback'])
-        }
     }
 
     apply(compiler) {
