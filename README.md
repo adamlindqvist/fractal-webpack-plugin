@@ -4,13 +4,15 @@
 
 Fractal webpack plugin to easily integrate fractal into a webpack workflow.
 
-Requires webpack 4+.
+Requires webpack 4 or 5.
 
 ## Installation
 
 ```
-npm install fractal-webpack-plugin --save-dev
+npm install fractal-webpack-plugin @frctl/fractal --save-dev
 ```
+
+Note: Previously, fractal was added as a dependency. 
 
 ## Usage
 

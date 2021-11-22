@@ -6,13 +6,11 @@
   "author": "",
   "main": "fractal.config.js",
   "scripts": {
-    "dev": "webpack --config webpack.example.js --watch --progress --hide-modules"
-  },
-  "dependencies": {
-    "@frctl/fractal": "^1.5.2",
-    "webpack": "^4.0"
+    "dev": "webpack --config webpack.example.js --watch --progress"
   },
   "devDependencies": {
-    "webpack-cli": "^3.1.0"
+    "@frctl/fractal": "^1.5.11",
+    "webpack": "^5.64.2",
+    "webpack-cli": "^4.9.1"
   }
 }
