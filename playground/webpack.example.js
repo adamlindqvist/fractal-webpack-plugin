@@ -6,7 +6,6 @@ module.exports = {
     plugins: [
         new FractalWebpackPlugin({
             mode: 'server',
-            sync: true,
             configPath: './playground/fractal.example.js'
         }),
     ],
