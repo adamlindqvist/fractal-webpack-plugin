@@ -19,12 +19,14 @@ class FractalWebpackPlugin {
     }
 
     apply(compiler) {
-        compiler.hooks.done.tap('FractalWebpackPlugin', () => {
+        compiler.hooks.done.tapAsync('FractalWebpackPlugin', (compilation, callback) => {
             if (this.options.mode === 'server' && !this.serverStarted) {
-                this.startServer();
-                this.serverStarted = true;
+                this.startServer().then(() => {
+                  this.serverStarted = true;
+                  callback();
+                });
             } else if (this.options.mode === 'build') {
-                this.build();
+                this.build().then(callback);
             }
         });
     }
