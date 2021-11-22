@@ -1,13 +1,13 @@
 const FractalWebpackPlugin = require('../index.js');
 
 module.exports = {
-    entry: './test/js/main.js',
+    entry: './playground/js/main.js',
     mode: 'development',
     plugins: [
         new FractalWebpackPlugin({
             mode: 'server',
             sync: true,
-            configPath: './test/fractal.example.js'
+            configPath: './playground/fractal.example.js'
         }),
     ],
 };
