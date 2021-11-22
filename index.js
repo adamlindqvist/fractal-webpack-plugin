@@ -1,7 +1,12 @@
 const path = require('path');
 
 try {
-    var fractal = require(path.join(process.cwd(), 'fractal.config'));
+    try {
+        var fractal = require(path.join(process.cwd(), 'fractal.config'));
+    }
+    catch (e) {
+        var fractal = require(path.join(process.cwd(), 'fractal'));
+    }
 } catch (e) {
     var fractal = require('@frctl/fractal').create();
 }

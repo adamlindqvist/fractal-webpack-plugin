@@ -1,0 +1,19 @@
+{
+  "name": "playground",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "@frctl/fractal": "^1.5.2",
+    "webpack": "^4.0"
+  },
+  "devDependencies": {
+    "release-it": "^14.11.8",
+    "webpack-cli": "^3.1.0"
+  },
+  "main": "fractal.config.js",
+  "scripts": {
+    "dev": "webpack --config webpack.example.js --watch --progress --hide-modules"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -4,8 +4,6 @@
   "description": "Fractal webpack plugin",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config playground/webpack.example.js --watch --progress --hide-modules",
     "release": "release-it"
   },
   "repository": {
