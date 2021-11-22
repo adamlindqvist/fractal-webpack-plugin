@@ -2,41 +2,40 @@
   "name": "fractal-webpack-plugin",
   "version": "4.1.4",
   "description": "Fractal webpack plugin",
-  "main": "index.js",
-  "scripts": {
-    "release": "release-it"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/adamlindqvist/fractal-webpack-plugin.git"
-  },
   "keywords": [
     "Webpack",
     "Fractal",
     "Styleguide",
     "UI"
   ],
-  "author": "Adam Lindqvist",
-  "license": "ISC",
+  "homepage": "https://github.com/adamlindqvist/fractal-webpack-plugin#readme",
   "bugs": {
     "url": "https://github.com/adamlindqvist/fractal-webpack-plugin/issues"
   },
-  "homepage": "https://github.com/adamlindqvist/fractal-webpack-plugin#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adamlindqvist/fractal-webpack-plugin.git"
+  },
+  "license": "MIT",
+  "author": "Adam Lindqvist",
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "package.json"
+  ],
+  "scripts": {
+    "release": "release-it"
+  },
   "dependencies": {
-    "@frctl/fractal": "^1.5.2",
+    "@frctl/fractal": "^1.5.11",
     "webpack": "^4.0"
   },
   "devDependencies": {
-    "release-it": "^14.11.8",
-    "webpack-cli": "^3.1.0"
+    "release-it": "^14.11.8"
   },
   "release-it": {
     "github": {
       "release": true
     }
-  },
-  "files": [
-    "index.js",
-    "package.json"
-  ]
+  }
 }
