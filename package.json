@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "webpack --config playground/webpack.example.js --watch --progress --hide-modules"
+    "dev": "webpack --config playground/webpack.example.js --watch --progress --hide-modules",
+    "release": "release-it"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,12 @@
     "webpack": "^4.0"
   },
   "devDependencies": {
+    "release-it": "^14.11.8",
     "webpack-cli": "^3.1.0"
+  },
+  "release-it": {
+    "github": {
+      "release": true
+    }
   }
 }

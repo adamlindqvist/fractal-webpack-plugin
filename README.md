@@ -67,3 +67,11 @@ Default: `fractal.js`
 
 Path to where the fractal.js file is located.
 
+
+## Release
+
+To create a new release simply run 
+
+```
+npm run release
+```
