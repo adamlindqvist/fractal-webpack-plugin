@@ -32,6 +32,8 @@ class FractalWebpackPlugin {
                 });
             } else if (this.options.mode === 'build') {
                 this.build().then(callback);
+            } else {
+                callback();
             }
         });
     }
