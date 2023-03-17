@@ -9,10 +9,10 @@
     "dev": "webpack --config webpack.example.js --watch --progress"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.5.2",
-    "webpack": "^5.74.0"
+    "@frctl/fractal": "^1.5.15",
+    "webpack": "^5.76.2"
   },
   "devDependencies": {
-    "webpack-cli": "^4.10.0"
+    "webpack-cli": "^5.0.1"
   }
 }
