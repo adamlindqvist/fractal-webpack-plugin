@@ -27,11 +27,11 @@
     "release": "release-it"
   },
   "dependencies": {
-    "@frctl/fractal": "^1.5.13",
+    "@frctl/fractal": "^1.5.15",
     "webpack": "^4.0 || ^5.0"
   },
   "devDependencies": {
-    "release-it": "^14.11.8"
+    "release-it": "^15.9.0"
   },
   "release-it": {
     "github": {
